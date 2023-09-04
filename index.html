@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <form id="carForm">
+        <input type="text" placeholder="Car Manufacturer" id="carManufacturer">
+        <input type="text" placeholder="Car Model" id="carModel">
+        <input type="text" placeholder="Year Of Manufacture" id="yearManufacture">
+        <input type="url" id="carURL" placeholder="Car Image URL">
+        <select id="ownedBY">
+            <option value=" ">Previous Ownership</option>
+            <option value="Private">Private</option>
+            <option value="Company">Company</option>
+            <option value="Taxi">Taxi</option>
+            <option value="Driver_Teacher">Driver Teacher</option>
+            <option value="Disabled">Disabled</option>
+        </select>
+        <select id="sunRoof">
+            <option value=" ">Have a SunRoof?</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <input type="text" placeholder="Monthly payment" id="monthPay">
+        <input type="button" value="Post Car" onclick="postCar()">
+        <input type="button" value="Clear" onclick="clearTable()">
+
+    </form>
+
+    <table id="carsList">
+        <tr>
+            <th>Manufacturer</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Image</th>
+            <th>Old Owner</th>
+            <th>SunRoof</th>
+            <th>Monthly payment</th>
+            <th>Remove Car</th>
+        </tr>
+        <tbody id="dataTable"></tbody>
+    </table>
+</body>
+
+</html>
